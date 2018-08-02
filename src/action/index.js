@@ -7,12 +7,12 @@ export const formHandler = (
   formAppraisal
 ) => ({
   type: exampleActions.FORM_SUBMIT,
-  value1: formName,
-  value2: formAge,
-  value3: formAddress,
-  value4: formDesignation,
-  value5: formSalary,
-  value6: formAppraisal
+  actionName: formName,
+  actionAge: formAge,
+  actionAddress: formAddress,
+  actionDesignation: formDesignation,
+  actionSalary: formSalary,
+  actionAppraisal: formAppraisal
 });
 export const exampleActions = {
   FORM_SUBMIT: "FORM_SUBMIT"
