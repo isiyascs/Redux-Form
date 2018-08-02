@@ -1,4 +1,4 @@
-import { exampleActions } from "../action";
+import { formActions } from "../action";
 
 const initialState = {
   name: "",
@@ -11,7 +11,7 @@ const initialState = {
 };
 const stateChange = (state = initialState, action) => {
   switch (action.type) {
-    case exampleActions.FORM_SUBMIT:
+    case formActions.FORM_SUBMIT:
       return {
         ...state,
         name: action.actionName,

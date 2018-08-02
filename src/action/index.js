@@ -6,7 +6,7 @@ export const formHandler = (
   formSalary,
   formAppraisal
 ) => ({
-  type: exampleActions.FORM_SUBMIT,
+  type: formActions.FORM_SUBMIT,
   actionName: formName,
   actionAge: formAge,
   actionAddress: formAddress,
@@ -14,6 +14,6 @@ export const formHandler = (
   actionSalary: formSalary,
   actionAppraisal: formAppraisal
 });
-export const exampleActions = {
+export const formActions = {
   FORM_SUBMIT: "FORM_SUBMIT"
 };
