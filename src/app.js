@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./style.css";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import view from "./view";
 import form from "./form";
@@ -12,9 +12,14 @@ class App extends React.Component {
         <Router>
           <React.Fragment>
             <div>
+              <ul>
+                <li>
               <Link to="/home">HOME</Link>
-              <br />
+              </li>
+              <li>
               <Link to="/viewd">ViewData</Link>
+            </li>
+            </ul>
             </div>
 
             <div>

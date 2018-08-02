@@ -1,6 +1,7 @@
 import React from "react";
 import { formHandler } from "../action";
 import { connect } from "react-redux";
+import "../style.css";
 const mapDispatchToProps = dispatch => ({
   handleForm: () =>
     dispatch(
@@ -13,30 +14,31 @@ const mapDispatchToProps = dispatch => ({
         document.getElementById("formAppraisal").value
       )
     )
+    
 });
 class Forms extends React.Component {
   render() {
     return (
-      <div>
-        Name:<input type="text" id="formName" />
+      <div className="form-div">
+        Name:<br /><input type="text" id="formName" className="formdata" />
         <br />
         <br />
-        Age:<input type="number" id="formAge" />
+        Age:<br /><input type="number" id="formAge" className="formdata"/>
         <br />
         <br />
-        Address:<input type="text" id="formAddress" />
+        Address:<br /><input type="text" id="formAddress" className="formdata"/>
         <br />
         <br />
-        Designation:<input type="text" id="formDesignation" />
+        Designation:<br /><input type="text" id="formDesignation" className="formdata"/>
         <br />
         <br />
-        Salary:<input type="number" id="formSalary" />
+        Salary:<br /><input type="number" id="formSalary" className="formdata"/>
         <br />
         <br />
-        Appraisal:<input type="number" id="formAppraisal" />
+        Appraisal:<br /><input type="number" id="formAppraisal" className="formdata"/>
         <br />
         <br />
-        <input type="button" onClick={this.props.handleForm} value="ADD" />
+        <input type="button" onClick={this.props.handleForm} value="ADD" className="btn" />
       </div>
     );
   }
