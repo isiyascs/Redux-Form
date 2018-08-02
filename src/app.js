@@ -26,7 +26,7 @@ const mapDispatchToProps = dispatch => ({
     )
 });
 
-class Example extends React.Component {
+class Form extends React.Component {
   render() {
     return (
       <div>
@@ -64,4 +64,4 @@ class Example extends React.Component {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Example);
+)(Form);
