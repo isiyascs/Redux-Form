@@ -6,30 +6,30 @@ import form from "./form";
 
 
 class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <Router>
-          <React.Fragment>
+    render() {
+        return (
             <div>
-              <ul>
-                <li>
-              <Link to="/home">HOME</Link>
-              </li>
-              <li>
-              <Link to="/viewd">ViewData</Link>
-            </li>
-            </ul>
-            </div>
+                <Router>
+                    <React.Fragment>
+                        <div>
+                            <ul>
+                                <li>
+                                    <Link to="/home">HOME</Link>
+                                </li>
+                                <li>
+                                    <Link to="/viewd">ViewData</Link>
+                                </li>
+                            </ul>
+                        </div>
 
-            <div>
-              <Route path="/viewd" component={view} />
-              <Route path="/home" component={form} />
+                        <div>
+                            <Route path="/viewd" component={view} />
+                            <Route path="/home" component={form} />
+                        </div>
+                    </React.Fragment>
+                </Router>
             </div>
-          </React.Fragment>
-        </Router>
-      </div>
-    );
-  }
+        );
+    }
 }
 export default App;
